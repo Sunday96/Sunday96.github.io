@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/4.2.0'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+  <title>2020年 vue面试 - 剪刀手爱德华</title>
+  
+    <meta name="keywords" content="面试题">
+  
+
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="剪刀手爱德华" type="application/atom+xml">
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  
+    <link rel="shortcut icon" type='image/x-icon' href="http://static.sunday90.com/images/favicon-32x32.png">
+  
+
+  <!-- import link -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/first.css">
+
+  
+
+  
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+  
+
+  <script id="loadcss"></script>
+
+</head>
+
+<body>
+  
+
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+  <div class='container'>
+  <div id='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
+        <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a id="s-toc" class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+            <img no-lazy class='logo' src='http://static.sunday90.com/images/avatar@4x-100.jpg'/>
+          
+          
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  <div id="l_body">
+    <div id="l_cover">
+  
+    
+        <div id="full" class='cover-wrapper post search' style="display: none;">
+          
+            <div id='cover-backstretch'></div>
+          
+          <div class='cover-body'>
+  <div class='top'>
+    
+    
+      <p class="title">斜杠青年</p>
+    
+    
+      <p class="subtitle">Coder/机车/摄影</p>
+    
+  </div>
+  <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="来点什么吧?" />
+          <i class="icon fas fa-search fa-fw"></i>
+        </form>
+      </div>
+    
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        </div>
+    
+  
+  </div>
+
+    <div id='safearea'>
+      <div class='body-wrapper' id="pjax-container">
+        
+
+<div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        2020年 vue面试
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="http://static.sunday90.com/images/avatar.jpg">
+    <p>sunday9787</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年7月31日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="2020年 vue面试" data-path="/2020/07/31/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  <h2 id="Vue-相关"><a href="#Vue-相关" class="headerlink" title="Vue 相关"></a>Vue 相关</h2><p><img src="http://static.sunday90.com/images/vue.png" class="lazyload" data-srcset="http://static.sunday90.com/images/vue.png" srcset="data:image/png;base64,666" alt="Vue"></p>
+<h3 id="Vue实现数据双向绑定的原理：Object-defineProperty"><a href="#Vue实现数据双向绑定的原理：Object-defineProperty" class="headerlink" title="Vue实现数据双向绑定的原理：Object.defineProperty()"></a>Vue实现数据双向绑定的原理：Object.defineProperty()</h3><ul>
+<li><p>Vue实现数据双向绑定主要是：采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应监听回调。当把一个普通 Javascript 对象传给 Vue 实例来作为它的 data 选项时，Vue 将遍历它的属性，用 Object.defineProperty() 将它们转为 getter/setter。用户看不到 getter/setter，但是在内部它们让 Vue 追踪依赖，在属性被访问和修改时通知变化</p>
+</li>
+<li><p>Vue的数据双向绑定 将<code>MVVM</code>作为数据绑定的入口，整合<code>Observer</code>，<code>Compile</code>和<code>Watcher</code>三者，通过<code>Observer</code>来监听自己的<code>model</code>的数据变化，通过<code>Compile</code>来解析编译模板指令（<code>vue</code>中是用来解析 <code>&#123;&#123;&#125;&#125;</code>），最终利用<code>watcher</code>搭起<code>observer</code>和<code>Compile</code>之间的通信桥梁，达到数据变化 —&gt;视图更新；视图交互变化（<code>input</code>）—&gt;数据<code>model</code>变更双向绑定效果</p>
+</li>
+</ul>
+<h3 id="Vue-如何监听-Array的变化"><a href="#Vue-如何监听-Array的变化" class="headerlink" title="Vue 如何监听 Array的变化"></a>Vue 如何监听 Array的变化</h3><ol>
+<li>先获取原生 <code>Array</code> 的原型方法</li>
+<li>使用 Object.defineProperty 拦截 数组的原生操作</li>
+<li>把需要被拦截的 <code>Array</code> 类型的数据原型指向改造后原型</li>
+<li>然后再去做视图的更新等操作</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arrayProto = <span class="built_in">Array</span>.prototype <span class="comment">// 获取Array的原型</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">def</span> (<span class="params">obj, key</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">Object</span>.defineProperty(obj, key, &#123;</span><br><span class="line">    enumerable: <span class="literal">true</span>,</span><br><span class="line">    configurable: <span class="literal">true</span>,</span><br><span class="line">    value: <span class="function"><span class="keyword">function</span>(<span class="params">...args</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(key); <span class="comment">// 控制台输出 push</span></span><br><span class="line">      <span class="built_in">console</span>.log(args); <span class="comment">// 控制台输出 [Array(2), 7, &quot;hello!&quot;]</span></span><br><span class="line">      <span class="comment">// 获取原生的方法</span></span><br><span class="line">      <span class="keyword">let</span> original = arrayProto[key];</span><br><span class="line">      <span class="comment">// 将开发者的参数传给原生的方法，保证数组按照开发者的想法被改变</span></span><br><span class="line">      <span class="keyword">const</span> result = original.apply(<span class="built_in">this</span>, args);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// do something 比如通知Vue视图进行更新</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;我的数据被改变了，视图该更新啦&#x27;</span>);</span><br><span class="line">      <span class="built_in">this</span>.text = <span class="string">&#x27;hello Vue&#x27;</span>;</span><br><span class="line">      <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 新的原型</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    <span class="function"><span class="title">push</span>(<span class="params"></span>)</span> &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 重写赋值</span></span><br><span class="line">def(obj, <span class="string">&#x27;push&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arr = [<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 原型的指向重写</span></span><br><span class="line">arr.__proto__ = obj;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 执行push</span></span><br><span class="line">arr.push([<span class="number">1</span>, <span class="number">2</span>], <span class="number">7</span>, <span class="string">&#x27;hello!&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Vue-nextTick有什么作用"><a href="#Vue-nextTick有什么作用" class="headerlink" title="Vue.$nextTick有什么作用"></a>Vue.$nextTick有什么作用</h3><ul>
+<li>当数据更新后 dom 会重新渲染，<code>$nextTick</code>就是为了可以在dom更新后立即拿到最新的dom对象</li>
+</ul>
+<h3 id="vue的优点是什么"><a href="#vue的优点是什么" class="headerlink" title="vue的优点是什么"></a>vue的优点是什么</h3><ul>
+<li>低耦合。视图（<code>View</code>）可以独立于<code>Model</code>变化和修改，一个<code>ViewModel</code>可以绑定到不同的<code>&quot;View&quot;</code>上，当View变化的时候Model可以不变，当<code>Model</code>变化的时候<code>View</code>也可以不变</li>
+<li>可重用性。你可以把一些视图逻辑放在一个<code>ViewModel</code>里面，让很多<code>view</code>重用这段视图逻辑</li>
+<li>可测试。界面素来是比较难于测试的，而现在测试可以针对<code>ViewModel</code>来写</li>
+</ul>
+<h3 id="Vue-组件-data-为什么必须是函数"><a href="#Vue-组件-data-为什么必须是函数" class="headerlink" title="Vue 组件 data 为什么必须是函数"></a>Vue 组件 data 为什么必须是函数</h3><ul>
+<li>每个组件都是 <code>Vue</code> 的实例</li>
+<li>组件共享 <code>data</code> 属性，当 <code>data</code> 的值是同一个引用类型的值时，改变其中一个会影响其它实例</li>
+</ul>
+<h3 id="Virtual-DOM-是什么？作用是什么"><a href="#Virtual-DOM-是什么？作用是什么" class="headerlink" title="Virtual DOM 是什么？作用是什么"></a>Virtual DOM 是什么？作用是什么</h3><p>一棵以 JavaScript 对象( VNode 节点)作为基础的树，用对象属性来描述节点，实际上它只是一层对真实 DOM 的抽象</p>
+<ul>
+<li><p>提供与真实DOM节点所对应的虚拟节点vnode</p>
+</li>
+<li><p>将虚拟节点vnode和旧虚拟节点oldVnode进行对比，然后更新视图</p>
+</li>
+</ul>
+<h3 id="v-for-的时候为什么要加-key"><a href="#v-for-的时候为什么要加-key" class="headerlink" title="v-for 的时候为什么要加 key"></a>v-for 的时候为什么要加 key</h3><p>更新组件时判断两个节点是否相同。相同就复用，不相同就删除旧的创建新的</p>
+<h4 id="不用key"><a href="#不用key" class="headerlink" title="不用key"></a>不用key</h4><ul>
+<li><p><strong>就地复用节点</strong>。在比较新旧两个节点是否是同一个节点的过程中会判断成新旧两个节点是同一个节点，因为 a.key 和 b.key 都是 undefined。所以不会重新创建节点和删除节点，只会在节点的属性层面上进行比较和更新。所以可能在某种程度上（创建和删除节点方面）会有渲染性能上的提升；</p>
+</li>
+<li><p><strong>无法维持组件的状态</strong>。由于就地复用节点的关系，可能在维持组件状态方面会导致不可预知的错误，比如无法维持改组件的动画效果、开关等状态；</p>
+</li>
+</ul>
+<h4 id="用key"><a href="#用key" class="headerlink" title="用key"></a>用key</h4><ul>
+<li><strong>维持组件的状态，保证组件的复用</strong>。因为有 key 唯一标识了组件，不会在每次比较新旧两个节点是否是同一个节点的时候直接判断为同一个节点，而是会继续在接下来的节点中找到 key 相同的节点去比较，能找到相同的 key 的话就复用节点，不能找到的话就增加或者删除节点。</li>
+<li><strong>查找性能上的提升</strong>。有 key 的时候，会生成 hash，这样在查找的时候就是 hash 查找了，基本上就是 O(1) 的复杂度</li>
+<li><strong>节点复用带来的性能提升</strong>。因为有 key 唯一标识了组件，所以会尽可能多的对组件进行复用（尽管组件顺序不同），那么创建和删除节点数量就会变少，这方面的消耗就会下降，带来性能的提升。</li>
+</ul>
+<h3 id="Vue-和-React-的diff算法的区别"><a href="#Vue-和-React-的diff算法的区别" class="headerlink" title="Vue 和 React 的diff算法的区别"></a>Vue 和 React 的diff算法的区别</h3><p>vue和react的diff算法，都是忽略跨级比较，只做同级比较。vue diff时调动patch函数，参数是vnode和oldVnode，分别代表新旧节点。</p>
+<ul>
+<li>vue比对节点，当节点元素类型相同，但是className不同，认为是不同类型元素，删除重建，而react会认为是同类型节点，只是修改节点属性</li>
+<li>vue的列表比对，采用从两端到中间的比对方式，而react则采用从左到右依次比对的方式。当一个集合，只是把最后一个节点移动到了第一个，react会把前面的节点依次移动，而vue只会把最后一个节点移动到第一个。总体上，vue的对比方式更高效</li>
+</ul>
+<h3 id="Vue-与-Angular-以及-React的区别"><a href="#Vue-与-Angular-以及-React的区别" class="headerlink" title="Vue 与 Angular 以及 React的区别"></a>Vue 与 Angular 以及 React的区别</h3><ol>
+<li>与AngularJS的区别<br>相同点：<br>都支持指令：内置指令和自定义指令；都支持过滤器：内置过滤器和自定义过滤器；都支持双向数据绑定；都不支持低端浏览器<br>不同点：<br>AngularJS的学习成本高，比如增加了Dependency Injection特性，而Vue.js本身提供的API都比较简单、直观；在性能上，AngularJS依赖对数据做脏检查，所以Watcher越多越慢；Vue.js使用基于依赖追踪的观察并且使用异步队列更新，所有的数据都是独立触发的</li>
+<li>与React的区别<br>相同点：<br>React采用特殊的JSX语法，Vue.js在组件开发中也推崇编写.vue特殊文件格式，对文件内容都有一些约定，两者都需要编译后使用；中心思想相同：一切都是组件，组件实例之间可以嵌套；都提供合理的钩子函数，可以让开发者定制化地去处理需求；都不内置列数AJAX，Route等功能到核心包，而是以插件的方式加载；在组件开发中都支持mixins的特性<br>不同点：<br> React采用的Virtual DOM会对渲染出来的结果做脏检查；Vue.js在模板中提供了指令，过滤器等，可以非常方便，快捷地操作Virtual DOM</li>
+</ol>
+<h2 id="JS-基础"><a href="#JS-基础" class="headerlink" title="JS 基础"></a>JS 基础</h2><h3 id="JS-基本类型有哪些？引用类型有哪些"><a href="#JS-基本类型有哪些？引用类型有哪些" class="headerlink" title="JS 基本类型有哪些？引用类型有哪些"></a>JS 基本类型有哪些？引用类型有哪些</h3><p>基本类型  存放在<strong>栈内存</strong>中，占据固定大小的空间</p>
+<ul>
+<li>string</li>
+<li>number</li>
+<li>null</li>
+<li>boolean</li>
+<li>symbol</li>
+<li>undefined</li>
+</ul>
+<p>引用类型  保存在<strong>堆内存</strong>中</p>
+<ul>
+<li>function</li>
+<li>object</li>
+<li>array</li>
+</ul>
+<h3 id="介绍下-浅拷贝-深拷贝"><a href="#介绍下-浅拷贝-深拷贝" class="headerlink" title="介绍下 浅拷贝 深拷贝"></a>介绍下 浅拷贝 深拷贝</h3><h3 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h3><p>只赋值引用，没有赋值真正的值</p>
+<h3 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h3><p>重新创建对象 切断 引用</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// @ts-expect-error</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcoyp</span>&lt;<span class="title">T</span> <span class="title">extends</span> <span class="title">Record</span>&lt;<span class="title">string</span>, <span class="title">any</span>&gt;&gt;(<span class="params">origin: T, target?: T = &#123;&#125;</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">const</span> k <span class="keyword">in</span> origin) &#123;</span><br><span class="line">    <span class="keyword">if</span> (origin.hasOwnProperty(k)) &#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">typeof</span> origin[k] === <span class="string">&#x27;object&#x27;</span> &amp;&amp; origin[k]) &#123;</span><br><span class="line">        <span class="comment">// @ts-expect-error</span></span><br><span class="line">        target[k] = origin[k] <span class="keyword">instanceof</span> <span class="built_in">Array</span> ? [] : &#123;&#125;;</span><br><span class="line">        deepcoyp(origin[k], target[k]);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        target[k] = origin[k];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> target;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="JS-高级"><a href="#JS-高级" class="headerlink" title="JS 高级"></a>JS 高级</h2><p><img src="http://static.sunday90.com/images/6288755792019456.jpeg" class="lazyload" data-srcset="http://static.sunday90.com/images/6288755792019456.jpeg" srcset="data:image/png;base64,666" alt="javascript"></p>
+<h3 id="prototype-和-proto-的区别"><a href="#prototype-和-proto-的区别" class="headerlink" title="prototype 和__proto__的区别"></a>prototype 和__proto__的区别</h3><ul>
+<li><p>prototype 是函数的属性 【原型】</p>
+</li>
+<li><p>__proto__ 是每个对象拥有的属性 指向 构造函数原型</p>
+</li>
+</ul>
+<blockquote>
+<p>提示：__proto__ 该特性已经从 Web 标准中删除 应该使用 <code>Object.getPrototypeOf()</code> 来获取对象的原型</p>
+</blockquote>
+<h3 id="Javascript-new一个对象的时候，内部发生了什么"><a href="#Javascript-new一个对象的时候，内部发生了什么" class="headerlink" title="Javascript new一个对象的时候，内部发生了什么"></a>Javascript new一个对象的时候，内部发生了什么</h3><ul>
+<li>创建一个空的简单JavaScript对象（即<code>&#123;&#125;</code>）</li>
+<li>链接该对象（即设置该对象的构造函数）到另一个对象 </li>
+<li>将步骤1新创建的对象作为<code>this</code>的上下文 </li>
+<li>如果该函数没有返回对象，则返回<code>this</code></li>
+</ul>
+<h3 id="Object-create实现了什么？传null得到的结果和普通对象有什么区别"><a href="#Object-create实现了什么？传null得到的结果和普通对象有什么区别" class="headerlink" title="Object.create实现了什么？传null得到的结果和普通对象有什么区别"></a>Object.create实现了什么？传null得到的结果和普通对象有什么区别</h3><blockquote>
+<p>创建一个新对象，使用现有的对象来提供新创建的对象的 __proto__<br>得到一个 没有任何原型的对象，因为 null 是顶层对象 没有原型</p>
+</blockquote>
+<h3 id="import和require的区别"><a href="#import和require的区别" class="headerlink" title="import和require的区别"></a>import和require的区别</h3><blockquote>
+<p>node编程中最重要的思想就是模块化，<code>import</code>和<code>require</code>都是被模块化所使用</p>
+</blockquote>
+<ol>
+<li>出现的时间、地点不同<br>require/exports 是社区产生的模块规范 2009年<br>import/export 是 JS标准化模块规范 2015年</li>
+<li>require/exports 是运行时动态加载，import/export 是静态编译<br>CommonJS 加载的是一个对象（即 module.exports 属性），该对象只有在脚本运行完才会生成。而 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成 require/exports 输出的是一个值的拷贝，import/export 模块输出的是值的引用</li>
+<li>用法不一致</li>
+</ol>
+<h3 id="防抖节流，它们两个之间的区别是什么"><a href="#防抖节流，它们两个之间的区别是什么" class="headerlink" title="防抖节流，它们两个之间的区别是什么"></a>防抖节流，它们两个之间的区别是什么</h3><ul>
+<li>函数防抖（debounce）：当持续触发事件时，一定时间段内没有再触发事件，事件处理函数才会执行一次，如果设定的时间到来之前，又一次触发了事件，就重新开始延时</li>
+<li>函数节流（throttle）当持续触发事件时，保证一定时间段内只调用一次事件处理函数</li>
+</ul>
+<h3 id="说说你对闭包的理解"><a href="#说说你对闭包的理解" class="headerlink" title="说说你对闭包的理解"></a>说说你对闭包的理解</h3><p>闭包的优点是可以避免全局变量的污染；缺点是闭包会常驻内存，增加内存使用量，使用不当很容易造成内存泄漏。在JavaScript中，函数即闭包，只有函数才会产生作用域</p>
+<blockquote>
+<p>闭包有3个特性：</p>
+</blockquote>
+<ul>
+<li>函数嵌套函数</li>
+<li>在函数内部可以引用外部的参数和变量</li>
+<li>参数和变量不会以垃圾回收机制回收</li>
+</ul>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p><img src="http://static.sunday90.com/images/Banner-Blog-1A-1.jpg" class="lazyload" data-srcset="http://static.sunday90.com/images/Banner-Blog-1A-1.jpg" srcset="data:image/png;base64,666" alt="algorithm"></p>
+<h3 id="构建二叉树"><a href="#构建二叉树" class="headerlink" title="构建二叉树"></a>构建二叉树</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BinaryTree</span> </span>&#123;</span><br><span class="line">  <span class="keyword">public</span> root: <span class="literal">null</span> | Node = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="title">insert</span>(<span class="params">key: <span class="built_in">number</span></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> node = <span class="keyword">new</span> Node(key);</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">this</span>.root) &#123;</span><br><span class="line">      <span class="built_in">this</span>.insertNode(<span class="built_in">this</span>.root, node);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">this</span>.root = node;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="function"><span class="title">insertNode</span>(<span class="params">node: Node, newNode: Node</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 节点值 小于 根节点 插入左边  反之 插入右边</span></span><br><span class="line">    <span class="keyword">if</span> (newNode.key &lt; node.key) &#123;</span><br><span class="line">      <span class="comment">// 插入前 判断当前node 是否为空 是 生成节点 否则 继续 insertNode</span></span><br><span class="line">      <span class="keyword">if</span> (node.left === <span class="literal">null</span>) &#123;</span><br><span class="line">        node.left = newNode;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.insertNode(node.left, newNode);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (node.right === <span class="literal">null</span>) &#123;</span><br><span class="line">        node.right = newNode;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.insertNode(node.right, newNode);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="翻转二叉树"><a href="#翻转二叉树" class="headerlink" title="翻转二叉树"></a>翻转二叉树</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 翻转二叉树</span></span><br><span class="line"><span class="comment"> * 递归翻转</span></span><br><span class="line"><span class="comment"> * 先判断 节点是否为空</span></span><br><span class="line"><span class="comment"> * 首先 先 暂存 左右子节点</span></span><br><span class="line"><span class="comment"> * 赋值 左右右节点 = 暂存右左节点;</span></span><br><span class="line"><span class="comment"> * 递归 左右节点</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BinaryTree</span> </span>&#123;</span><br><span class="line">  <span class="comment">// more...</span></span><br><span class="line">  <span class="keyword">private</span> <span class="function"><span class="title">reverseNode</span>(<span class="params">node: Node | <span class="literal">null</span></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!node) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> tempLeft = node.left;</span><br><span class="line">    <span class="keyword">const</span> tempRight = node.right;</span><br><span class="line"></span><br><span class="line">    node.right = tempLeft;</span><br><span class="line">    <span class="built_in">this</span>.reverseNode(node.right);</span><br><span class="line"></span><br><span class="line">    node.left = tempRight;</span><br><span class="line">    <span class="built_in">this</span>.reverseNode(node.left);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="title">reverse</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.reverseNode(<span class="built_in">this</span>.root);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="随机生成指定长度数组-且-值-唯一（洗牌算法）"><a href="#随机生成指定长度数组-且-值-唯一（洗牌算法）" class="headerlink" title="随机生成指定长度数组 且 值 唯一（洗牌算法）"></a>随机生成指定长度数组 且 值 唯一（洗牌算法）</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 洗牌</span></span><br><span class="line"><span class="comment"> * 先生成指定长度数组，随后填充1-x值</span></span><br><span class="line"><span class="comment"> * 再 排序 利用 (Math.random() &gt; 0.5 ? -1 : 1) 来随机排序</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="variable">size</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="variable">domain</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shuffle</span>(<span class="params">size: <span class="built_in">number</span>, domain: <span class="built_in">number</span>[]</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> [min, max] = domain;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Array</span>(max)</span><br><span class="line">    .fill(<span class="number">0</span>)</span><br><span class="line">    .map(<span class="function">(<span class="params">_, i</span>) =&gt;</span> i + <span class="number">1</span>)</span><br><span class="line">    .sort(<span class="function">() =&gt;</span> (<span class="built_in">Math</span>.random() &gt; <span class="number">0.5</span> ? -<span class="number">1</span> : <span class="number">1</span>))</span><br><span class="line">    .filter(<span class="function"><span class="params">v</span> =&gt;</span> v &lt;= max &amp;&amp; v &gt;= min)</span><br><span class="line">    .slice(<span class="number">0</span>, size);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="两数之和"><a href="#两数之和" class="headerlink" title="两数之和"></a>两数之和</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 两数之和</span></span><br><span class="line"><span class="comment"> * 利用堆 存储 已经遍历过的下标和值</span></span><br><span class="line"><span class="comment"> * 下标做 key 值 value  nums = &#123;0: xxx&#125;;</span></span><br><span class="line"><span class="comment"> * 循环一次</span></span><br><span class="line"><span class="comment"> * 从 nums 获取 当前下标的值  curNum = nums[0]</span></span><br><span class="line"><span class="comment"> * target - curNum 得到 key</span></span><br><span class="line"><span class="comment"> * 如果 curNum[key] 不为 undefined 即 得到 另外一个 数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@export</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">twoSum</span>(<span class="params">nums: <span class="built_in">number</span>[], target: <span class="built_in">number</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> prevNums: Record&lt;<span class="built_in">string</span>, <span class="built_in">number</span>&gt; = &#123;&#125;; <span class="comment">// 存放出现过的数字，和对应的索引</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">    <span class="comment">// 遍历每一项</span></span><br><span class="line">    <span class="keyword">const</span> curNum = nums[i]; <span class="comment">// 当前项</span></span><br><span class="line">    <span class="keyword">const</span> targetNum = target - curNum; <span class="comment">// 希望从过去的数字中找到的呼应项</span></span><br><span class="line">    <span class="keyword">const</span> targetNumIndex = prevNums[targetNum]; <span class="comment">// 在prevNums中找targetNum的索引</span></span><br><span class="line">    <span class="keyword">if</span> (targetNumIndex !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> [targetNumIndex, i]; <span class="comment">// 直接返回targetNumIndex和当前的i</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果找不到，说明之前没出现过targetNum</span></span><br><span class="line">    prevNums[curNum] = i; <span class="comment">// 往prevNums存当前curNum和对应的i</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 利用 filter indexOf</span></span><br><span class="line"><span class="comment"> * indexOf 返回第一次找到的元素下标，如果下标跟返回的下标不一致说明重复</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@export</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@template <span class="variable">T</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;T[]&#125;</span> <span class="variable">arr</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">unique3</span>&lt;<span class="title">T</span> <span class="title">extends</span> <span class="title">number</span>&gt;(<span class="params">arr: T[]</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.time(<span class="string">&#x27;unique3&#x27;</span>);</span><br><span class="line">  <span class="keyword">const</span> result: T[] = arr.filter(<span class="function">(<span class="params">item, index</span>) =&gt;</span> arr.indexOf(item, <span class="number">0</span>) === index);</span><br><span class="line">  <span class="built_in">console</span>.timeEnd(<span class="string">&#x27;unique3&#x27;</span>);</span><br><span class="line">  <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 选择排序</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description </span>首先从原始数组中找到最小的元素，并把该元素放在数组的最前面，然后再从剩下的元素中寻找最小的元素，放在之前最小元素的后面，知道排序完毕。</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@export</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">arr</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">selectSort2</span>(<span class="params">arr: <span class="built_in">number</span>[]</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> minIndex = <span class="number">0</span>,</span><br><span class="line">    temp;</span><br><span class="line">  <span class="keyword">const</span> length = arr.length;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">    minIndex = i;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = i + <span class="number">1</span>; j &lt; length; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (arr[j] &lt; arr[minIndex]) &#123;</span><br><span class="line">        <span class="comment">// 找到 最小值 index</span></span><br><span class="line">        minIndex = j;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    temp = arr[i];</span><br><span class="line">    arr[i] = arr[minIndex];</span><br><span class="line">    arr[minIndex] = temp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="JS-中的广度与深度优先遍历"><a href="#JS-中的广度与深度优先遍历" class="headerlink" title="JS 中的广度与深度优先遍历"></a>JS 中的广度与深度优先遍历</h3><blockquote>
+<p>深度优先</p>
+</blockquote>
+<p><img src="http://static.sunday90.com/images/20180705160341166.png" class="lazyload" data-srcset="http://static.sunday90.com/images/20180705160341166.png" srcset="data:image/png;base64,666" alt="deepTraversal"></p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 深度遍历</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="variable">node</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">deepTraversal</span>&lt;<span class="title">T</span> <span class="title">extends</span> <span class="title">Node</span>&gt;(<span class="params">node: T</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(node);</span><br><span class="line">  <span class="keyword">if</span> (node.childNodes) &#123;</span><br><span class="line">    <span class="built_in">Array</span>.prototype.forEach.call(node.childNodes, <span class="function">(<span class="params">item: T</span>) =&gt;</span> &#123;</span><br><span class="line">      deepTraversal(item);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>广度优先</p>
+</blockquote>
+<p><img src="http://static.sunday90.com/images/20180705155854774.png" class="lazyload" data-srcset="http://static.sunday90.com/images/20180705155854774.png" srcset="data:image/png;base64,666" alt="breadthTraversal"></p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 广度优先</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@export</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@template <span class="variable">T</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;T&#125;</span> <span class="variable">node</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">breadthTraversal</span>&lt;<span class="title">T</span> <span class="title">extends</span> <span class="title">Node</span>&gt;(<span class="params">node: T</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> queue: T[] = [];</span><br><span class="line">  queue.unshift(node);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (queue.length) &#123;</span><br><span class="line">    <span class="keyword">const</span> childrenItem = queue.pop()!;</span><br><span class="line">    <span class="built_in">console</span>.log(childrenItem);</span><br><span class="line">    <span class="keyword">const</span> childrenList: T[] = <span class="built_in">Array</span>.prototype.slice.call(childrenItem.childNodes, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; childrenList.length; i++) &#123;</span><br><span class="line">      queue.push(childrenList[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><p><img src="http://static.sunday90.com/images/QQ20200718-003403@2x.png" class="lazyload" data-srcset="http://static.sunday90.com/images/QQ20200718-003403@2x.png" srcset="data:image/png;base64,666" alt="webpack"></p>
+<h3 id="你都用过哪些webpack的配置"><a href="#你都用过哪些webpack的配置" class="headerlink" title="你都用过哪些webpack的配置"></a>你都用过哪些webpack的配置</h3><ul>
+<li><code>mode</code> 模式</li>
+<li><code>entry</code> 入口</li>
+<li><code>output</code> 出口 文件名 路径配置</li>
+<li><code>resolve</code> extensions 可被解析的 文件后缀  alias 别名</li>
+<li><code>externals</code> 外部依赖</li>
+<li><code>module</code> 配置 模块解析</li>
+</ul>
+<h3 id="plugin和loader的区别"><a href="#plugin和loader的区别" class="headerlink" title="plugin和loader的区别"></a>plugin和loader的区别</h3><ol>
+<li>loader 用于加载解析某些资源文件<br>例如 把.ts 编译成 js，把小图片转换成 base64，把.scss 编译成 css 等等，只针对转化文件</li>
+<li>plugin 用于扩展webpack的功能<br>它直接作用于 webpack，扩展了它的功能。当然loader也是变相的扩展了 webpack ，但是它只专注于转化文件（transform）这一个领域。而plugin的功能更加的丰富，而不仅局限于资源的加载<br>例如 定义环境变量，压缩js css 等等，开启 dev-server</li>
+</ol>
+<h3 id="用过哪些loader、plugin"><a href="#用过哪些loader、plugin" class="headerlink" title="用过哪些loader、plugin"></a>用过哪些loader、plugin</h3><p><strong>loader</strong></p>
+<ul>
+<li>vue-loader</li>
+<li>ts-loader</li>
+<li>sass-loader</li>
+<li>vue-style-loader</li>
+<li>style-loader</li>
+<li>postcss-loader</li>
+</ul>
+<p><strong>plugin</strong></p>
+<ul>
+<li>html-webpack-plugin  结合 webpack-dev-server</li>
+<li>mini-css-extract-plugin 把css 输出成css 文件</li>
+<li>uglifyjs-webpack-plugin 把 压缩css / js 文件</li>
+</ul>
+<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p><img src="http://static.sunday90.com/images/http1.jpeg" class="lazyload" data-srcset="http://static.sunday90.com/images/http1.jpeg" srcset="data:image/png;base64,666" alt="http1"></p>
+<h3 id="谈谈你对http协议的认识"><a href="#谈谈你对http协议的认识" class="headerlink" title="谈谈你对http协议的认识"></a>谈谈你对http协议的认识</h3><p>http协议是基于一种请求/响应模式的、无状态的、应用层的协议，基于TCP协议传输数据，支持客户/服务器模式，每次完整交互都包含HTTP请求和HTTP响应。</p>
+<p>Http请求由三个部分组成，请求行、消息报头、请求正文（可选，为空也行）</p>
+<p>请求方法主要包括：GET、POST、HEAD、PUT、DELETE… GET：请求获取Request-URI所标识的资源 POST：在Request-URI所标识的资源后附加新的数据（body）</p>
+<p>每种方法规定了客户与服务器联系的类型不同，由于http协议简单，使得http服务器的程序规模小，因而通信速度快</p>
+<h3 id="HTTP-Request-Header-请求头"><a href="#HTTP-Request-Header-请求头" class="headerlink" title="HTTP Request Header 请求头"></a>HTTP Request Header 请求头</h3><ul>
+<li><strong>Accept:</strong> 允许哪些媒体类型</li>
+<li><strong>Accept-Charset:</strong> 允许哪些字符集</li>
+<li><strong>Accept-Encoding:</strong> 允许哪些编码</li>
+<li><strong>Accept-Language:</strong> 允许哪些语言</li>
+<li><strong>Cache-Control:</strong> 缓存策略，如no-cache 如max-age:100</li>
+<li><strong>Connection:</strong> 连接选项，例如是否允许代理</li>
+<li><strong>Host:</strong> 请求的主机</li>
+<li><strong>Referer:</strong> 表明这个请求发起的源头</li>
+</ul>
+<h3 id="HTTP-Responses-Header-响应头"><a href="#HTTP-Responses-Header-响应头" class="headerlink" title="HTTP Responses Header 响应头"></a>HTTP Responses Header 响应头</h3><ul>
+<li><strong>Accept-Ranges：</strong>表明服务器是否支持指定范围请求及哪种类型的分段请求</li>
+<li><strong>Age：</strong>从原始服务器到代理缓存形成的估算时间（以秒计，非负）</li>
+<li><strong>Allow：</strong>对某网络资源的有效的请求行为，不允许则返回405</li>
+<li><strong>Cache-Control：</strong>告诉所有的缓存机制是否可以缓存及哪种类型</li>
+<li><strong>Content-Encodingweb：</strong>服务器支持的返回内容压缩编码类型</li>
+<li><strong>Content-Language：</strong>响应体的语言</li>
+<li><strong>Content-Length：</strong>响应体的长度</li>
+<li><strong>Content-Type：</strong>返回内容的MIME类型</li>
+<li><strong>Expires：</strong>响应过期的日期和时间</li>
+</ul>
+<h3 id="HTTP状态码有哪些？代表什么意思"><a href="#HTTP状态码有哪些？代表什么意思" class="headerlink" title="HTTP状态码有哪些？代表什么意思"></a>HTTP状态码有哪些？代表什么意思</h3><p>HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：</p>
+<table>
+<thead>
+<tr>
+<th align="left">分类</th>
+<th align="left">分类描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1**</td>
+<td align="left">信息，服务器收到请求，需要请求者继续执行操作</td>
+</tr>
+<tr>
+<td align="left">2**</td>
+<td align="left">成功，操作被成功接收并处理</td>
+</tr>
+<tr>
+<td align="left">3**</td>
+<td align="left">重定向，需要进一步的操作以完成请求</td>
+</tr>
+<tr>
+<td align="left">4**</td>
+<td align="left">客户端错误，请求包含语法错误或无法完成请求</td>
+</tr>
+<tr>
+<td align="left">5**</td>
+<td align="left">服务器错误，服务器在处理请求的过程中发生了错误</td>
+</tr>
+</tbody></table>
+<p>HTTP状态码列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">状态码</th>
+<th align="left">状态码英文名称</th>
+<th>中文描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">100</td>
+<td align="left">Continue</td>
+<td>继续。客户端应继续其请求</td>
+</tr>
+<tr>
+<td align="left">101</td>
+<td align="left">Switching Protocols</td>
+<td>切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">200</td>
+<td align="left">OK</td>
+<td>请求成功。一般用于GET与POST请求</td>
+</tr>
+<tr>
+<td align="left">201</td>
+<td align="left">Created</td>
+<td>已创建。成功请求并创建了新的资源</td>
+</tr>
+<tr>
+<td align="left">202</td>
+<td align="left">Accepted</td>
+<td>已接受。已经接受请求，但未处理完成</td>
+</tr>
+<tr>
+<td align="left">203</td>
+<td align="left">Non-Authoritative Information</td>
+<td>非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本</td>
+</tr>
+<tr>
+<td align="left">204</td>
+<td align="left">No Content</td>
+<td>无内容。服务器成功处理，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档</td>
+</tr>
+<tr>
+<td align="left">205</td>
+<td align="left">Reset Content</td>
+<td>重置内容。服务器处理成功，用户终端（例如：浏览器）应重置文档视图。可通过此返回码清除浏览器的表单域</td>
+</tr>
+<tr>
+<td align="left">206</td>
+<td align="left">Partial Content</td>
+<td>部分内容。服务器成功处理了部分GET请求</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">300</td>
+<td align="left">Multiple Choices</td>
+<td>多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择</td>
+</tr>
+<tr>
+<td align="left">301</td>
+<td align="left">Moved Permanently</td>
+<td>永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替</td>
+</tr>
+<tr>
+<td align="left">302</td>
+<td align="left">Found</td>
+<td>临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI</td>
+</tr>
+<tr>
+<td align="left">303</td>
+<td align="left">See Other</td>
+<td>查看其它地址。与301类似。使用GET和POST请求查看</td>
+</tr>
+<tr>
+<td align="left">304</td>
+<td align="left">Not Modified</td>
+<td>未修改。所请求的资源未修改，服务器返回此状态码时，不会返回任何资源。客户端通常会缓存访问过的资源，通过提供一个头信息指出客户端希望只返回在指定日期之后修改的资源</td>
+</tr>
+<tr>
+<td align="left">305</td>
+<td align="left">Use Proxy</td>
+<td>使用代理。所请求的资源必须通过代理访问</td>
+</tr>
+<tr>
+<td align="left">306</td>
+<td align="left">Unused</td>
+<td>已经被废弃的HTTP状态码</td>
+</tr>
+<tr>
+<td align="left">307</td>
+<td align="left">Temporary Redirect</td>
+<td>临时重定向。与302类似。使用GET请求重定向</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">400</td>
+<td align="left">Bad Request</td>
+<td>客户端请求的语法错误，服务器无法理解</td>
+</tr>
+<tr>
+<td align="left">401</td>
+<td align="left">Unauthorized</td>
+<td>请求要求用户的身份认证</td>
+</tr>
+<tr>
+<td align="left">402</td>
+<td align="left">Payment Required</td>
+<td>保留，将来使用</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">Forbidden</td>
+<td>服务器理解请求客户端的请求，但是拒绝执行此请求</td>
+</tr>
+<tr>
+<td align="left">404</td>
+<td align="left">Not Found</td>
+<td>服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置”您所请求的资源无法找到”的个性页面</td>
+</tr>
+<tr>
+<td align="left">405</td>
+<td align="left">Method Not Allowed</td>
+<td>客户端请求中的方法被禁止</td>
+</tr>
+<tr>
+<td align="left">406</td>
+<td align="left">Not Acceptable</td>
+<td>服务器无法根据客户端请求的内容特性完成请求</td>
+</tr>
+<tr>
+<td align="left">407</td>
+<td align="left">Proxy Authentication Required</td>
+<td>请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权</td>
+</tr>
+<tr>
+<td align="left">408</td>
+<td align="left">Request Time-out</td>
+<td>服务器等待客户端发送的请求时间过长，超时</td>
+</tr>
+<tr>
+<td align="left">409</td>
+<td align="left">Conflict</td>
+<td>服务器完成客户端的 PUT 请求时可能返回此代码，服务器处理请求时发生了冲突</td>
+</tr>
+<tr>
+<td align="left">410</td>
+<td align="left">Gone</td>
+<td>客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置</td>
+</tr>
+<tr>
+<td align="left">411</td>
+<td align="left">Length Required</td>
+<td>服务器无法处理客户端发送的不带Content-Length的请求信息</td>
+</tr>
+<tr>
+<td align="left">412</td>
+<td align="left">Precondition Failed</td>
+<td>客户端请求信息的先决条件错误</td>
+</tr>
+<tr>
+<td align="left">413</td>
+<td align="left">Request Entity Too Large</td>
+<td>由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息</td>
+</tr>
+<tr>
+<td align="left">414</td>
+<td align="left">Request-URI Too Large</td>
+<td>请求的URI过长（URI通常为网址），服务器无法处理</td>
+</tr>
+<tr>
+<td align="left">415</td>
+<td align="left">Unsupported Media Type</td>
+<td>服务器无法处理请求附带的媒体格式</td>
+</tr>
+<tr>
+<td align="left">416</td>
+<td align="left">Requested range not satisfiable</td>
+<td>客户端请求的范围无效</td>
+</tr>
+<tr>
+<td align="left">417</td>
+<td align="left">Expectation Failed</td>
+<td>服务器无法满足Expect的请求头信息</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">500</td>
+<td align="left">Internal Server Error</td>
+<td>服务器内部错误，无法完成请求</td>
+</tr>
+<tr>
+<td align="left">501</td>
+<td align="left">Not Implemented</td>
+<td>服务器不支持请求的功能，无法完成请求</td>
+</tr>
+<tr>
+<td align="left">502</td>
+<td align="left">Bad Gateway</td>
+<td>作为网关或者代理工作的服务器尝试执行请求时，从远程服务器接收到了一个无效的响应</td>
+</tr>
+<tr>
+<td align="left">503</td>
+<td align="left">Service Unavailable</td>
+<td>由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中</td>
+</tr>
+<tr>
+<td align="left">504</td>
+<td align="left">Gateway Time-out</td>
+<td>充当网关或代理的服务器，未及时从远端服务器获取请求</td>
+</tr>
+<tr>
+<td align="left">505</td>
+<td align="left">HTTP Version not supported</td>
+<td>服务器不支持请求的HTTP协议的版本，无法完成处理</td>
+</tr>
+</tbody></table>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="/2019/10/07/element-form/" title="element-form resetFields 与 Vue $nextTick" rel="bookmark "><span class="title">element-form resetFields 与 Vue $nextTick</span><span class="excerpt">公司之前一个管理后台做好了，拿给客户演示后，提了新的需求，url传递参数 页面自动显示 action form 表单，且 ...</span></a></div></section></div>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://sunday9787.github.io/2020/07/31/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/>https://sunday9787.github.io/2020/07/31/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+        <div class='donate'>
+          <div class='imgs'>
+            
+              <img src='http://static.sunday90.com/images/zhifubao.jpeg'>
+            
+              <img src='http://static.sunday90.com/images/weixin.jpeg'>
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-14T22:20:39+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年12月14日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>面试题</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://sunday9787.github.io/2020/07/31/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/&title=2020年 vue面试 - 剪刀手爱德华&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://sunday9787.github.io/2020/07/31/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/&title=2020年 vue面试 - 剪刀手爱德华&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://sunday9787.github.io/2020/07/31/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/&title=2020年 vue面试 - 剪刀手爱德华&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/png;base64,666"></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVgAAAFYCAAAAAAzB7ucAAAEYklEQVR42u3aQXYjIQwFQN//0jMHmNev0ZeAOFPaxXYaKLyQZH3+iC3xQQAWrAALFqwAewT2E8Y/D1x8/dOMxwO9vF/db7ovsGDBggULFixYsGdhuxt629jUQbvrPl30lAdYsGDBggULFizYO7CvCXD4+W0JefECU+hlD7BgwYIFCxYsWLC/Cnb6wKuFQrdAAAsWLFiwYMGCBft/wU4NflTXmxrYAAsWLFiwYMGCBftdsGniXm1oTzeiqw30dCDl2CQMWLBgwYIFCxYs2CXY7sDEb/s79gALFixYsGDBggV7BLYbq/DdhH1qAGN3gAULFixYsGDBgj0DuwsivYC0sZ422MfPDxYsWLBgwYIFC/YIbBWgW0h0C443sOmBjvLfYMGCBQsWLFiwYI/CdgcZVgHTC+tezGqBMP4LAliwYMGCBQsWLNgtsNMH7SbYuwqHtPFe9QELFixYsGDBggV7FnZ1Y1ON6GqsXvCp54IFCxYsWLBgwYL9GbDVBHl14e5gRdqQTveXNvjBggULFixYsGDBnoWtbrSaeE+BTDWoq/ssFxZgwYIFCxYsWLBgr8BWIboXMgXeHdjoDpSABQsWLFiwYMGCvQPbHdSovj7VyK4WCNVCpOwEFixYsGDBggUL9gpseoA0AU8T/KlCZepzYMGCBQsWLFiwYM/CVgcuVg98OnGfBkrXBwsWLFiwYMGCBXsG9m0j3YS9O5C8qwE+vU+wYMGCBQsWLFiwd2BT4GohUE3I0wZ4taGeDmy8/oIAFixYsGDBggULdivs9IDEFGT1ArsDIdUvBliwYMGCBQsWLNifAZseoHqwtABIBza6hcTYLwhgwYIFCxYsWLBgR2A/xagWBinIakLeBe0WRo8FAliwYMGCBQsWLNirsLs23G1Up43xqYtuFwhgwYIFCxYsWLBgW7BxQ3foIlLw7iB0+n+v64MFCxYsWLBgwYI9AltOgMNEvnqw1XVT8KnG+mvlBRYsWLBgwYIFC/YI7BREtRDoFiJVmG7j/vG5YMGCBQsWLFiwYI/CTi9QbWBXE/J0QGOqwFkuEMCCBQsWLFiwYMFehZ2GSgczpgFXvzjL5wILFixYsGDBggV7FDYdZOheTJrgrz53qvEeFwhgwYIFCxYsWLBgj8BOJdi7Cof0QtLzlr8wYMGCBQsWLFiwYK/CdjdSTbS7BUH1c90ACxYsWLBgwYIFexe2G92Ddwc30oKie3GPr4MFCxYsWLBgwYI9AjvdoO4eYPpiuo3tcsMfLFiwYMGCBQsW7FHYtCCowk+/nzbcuwXOcoEAFixYsGDBggUL9gjsVAI9XTCkoOm+4n2CBQsWLFiwYMGC/SrY6Yb11AWl+44LDrBgwYIFCxYsWLBfDVsdoFi9mNWG9HShsLwPsGDBggULFixYsFdgq4l2d/Ch+vypAYzpwgUsWLBgwYIFCxbsHdhqVAuK6oWUDxQWHt1BFLBgwYIFCxYsWLB3YMVsgAULVoAFC1aA3Rp/AYeTEcWF10U0AAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2020/07/17/webpack-ts-es6-vue/'>
+          <p class='title'>webpack+ts+es6+vue 配置教程<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+之前一直搞不懂webpack，也排斥学习 总是觉得太难了 配置太复杂。。。
+最近一段时间没事写写轮播图玩，传统dom形式是写通了，我想拿到vue, react用呢？
+
+
+理解webpack如何...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-%E7%9B%B8%E5%85%B3"><span class="toc-text">Vue 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86%EF%BC%9AObject-defineProperty"><span class="toc-text">Vue实现数据双向绑定的原理：Object.defineProperty()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-%E5%A6%82%E4%BD%95%E7%9B%91%E5%90%AC-Array%E7%9A%84%E5%8F%98%E5%8C%96"><span class="toc-text">Vue 如何监听 Array的变化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-nextTick%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8"><span class="toc-text">Vue.$nextTick有什么作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue%E7%9A%84%E4%BC%98%E7%82%B9%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">vue的优点是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-%E7%BB%84%E4%BB%B6-data-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BF%85%E9%A1%BB%E6%98%AF%E5%87%BD%E6%95%B0"><span class="toc-text">Vue 组件 data 为什么必须是函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Virtual-DOM-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">Virtual DOM 是什么？作用是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-for-%E7%9A%84%E6%97%B6%E5%80%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8A%A0-key"><span class="toc-text">v-for 的时候为什么要加 key</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E7%94%A8key"><span class="toc-text">不用key</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8key"><span class="toc-text">用key</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-%E5%92%8C-React-%E7%9A%84diff%E7%AE%97%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">Vue 和 React 的diff算法的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-%E4%B8%8E-Angular-%E4%BB%A5%E5%8F%8A-React%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">Vue 与 Angular 以及 React的区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%E5%9F%BA%E7%A1%80"><span class="toc-text">JS 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JS-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-text">JS 基本类型有哪些？引用类型有哪些</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%E4%B8%8B-%E6%B5%85%E6%8B%B7%E8%B4%9D-%E6%B7%B1%E6%8B%B7%E8%B4%9D"><span class="toc-text">介绍下 浅拷贝 深拷贝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="toc-text">浅拷贝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E6%8B%B7%E8%B4%9D"><span class="toc-text">深拷贝</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%E9%AB%98%E7%BA%A7"><span class="toc-text">JS 高级</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#prototype-%E5%92%8C-proto-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">prototype 和__proto__的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Javascript-new%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E5%86%85%E9%83%A8%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-text">Javascript new一个对象的时候，内部发生了什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Object-create%E5%AE%9E%E7%8E%B0%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F%E4%BC%A0null%E5%BE%97%E5%88%B0%E7%9A%84%E7%BB%93%E6%9E%9C%E5%92%8C%E6%99%AE%E9%80%9A%E5%AF%B9%E8%B1%A1%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">Object.create实现了什么？传null得到的结果和普通对象有什么区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#import%E5%92%8Crequire%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">import和require的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%EF%BC%8C%E5%AE%83%E4%BB%AC%E4%B8%A4%E4%B8%AA%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">防抖节流，它们两个之间的区别是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">说说你对闭包的理解</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%97%E6%B3%95"><span class="toc-text">算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">构建二叉树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">翻转二叉树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90%E6%8C%87%E5%AE%9A%E9%95%BF%E5%BA%A6%E6%95%B0%E7%BB%84-%E4%B8%94-%E5%80%BC-%E5%94%AF%E4%B8%80%EF%BC%88%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95%EF%BC%89"><span class="toc-text">随机生成指定长度数组 且 值 唯一（洗牌算法）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C"><span class="toc-text">两数之和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D"><span class="toc-text">数组去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="toc-text">数组排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JS-%E4%B8%AD%E7%9A%84%E5%B9%BF%E5%BA%A6%E4%B8%8E%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86"><span class="toc-text">JS 中的广度与深度优先遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#webpack"><span class="toc-text">webpack</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%A0%E9%83%BD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9Bwebpack%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-text">你都用过哪些webpack的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#plugin%E5%92%8Cloader%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">plugin和loader的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9Bloader%E3%80%81plugin"><span class="toc-text">用过哪些loader、plugin</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP"><span class="toc-text">HTTP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%88%E8%B0%88%E4%BD%A0%E5%AF%B9http%E5%8D%8F%E8%AE%AE%E7%9A%84%E8%AE%A4%E8%AF%86"><span class="toc-text">谈谈你对http协议的认识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP-Request-Header-%E8%AF%B7%E6%B1%82%E5%A4%B4"><span class="toc-text">HTTP Request Header 请求头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP-Responses-Header-%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-text">HTTP Responses Header 响应头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP%E7%8A%B6%E6%80%81%E7%A0%81%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D"><span class="toc-text">HTTP状态码有哪些？代表什么意思</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+  
+
+  
+    
+    
+  
+
+  <section class="widget tagcloud shadow desktop mobile">
+    
+  <header>
+    
+      <a href='/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/nextTick/" style="font-size: 14px; color: #999">$nextTick</a> <a href="/tags/dom/" style="font-size: 14px; color: #999">dom</a> <a href="/tags/element-form/" style="font-size: 14px; color: #999">element-form</a> <a href="/tags/ts/" style="font-size: 14px; color: #999">ts</a> <a href="/tags/v2ray/" style="font-size: 14px; color: #999">v2ray</a> <a href="/tags/vue/" style="font-size: 14px; color: #999">vue</a> <a href="/tags/webpack/" style="font-size: 14px; color: #999">webpack</a> <a href="/tags/web%E5%AE%89%E5%85%A8/" style="font-size: 14px; color: #999">web安全</a> <a href="/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/" style="font-size: 14px; color: #999">小游戏</a> <a href="/tags/%E5%B0%8F%E9%A3%9E%E6%9C%BA/" style="font-size: 14px; color: #999">小飞机</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 14px; color: #999">面试题</a>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+
+        
+        
+          <!--此文件用来存放一些不方便取值的变量-->
+<!--思路大概是将值藏到重加载的区域内-->
+
+<script>
+  window.pdata={}
+  pdata.ispage=true;
+  pdata.postTitle="2020年 vue面试";
+  pdata.commentPath="";
+  pdata.commentPlaceholder="";
+
+  var l_header=document.getElementById("l_header");
+  
+  l_header.classList.add("show");
+  
+</script>
+
+        
+      </div>
+      
+  
+  <footer class="footer clearfix">
+    <br><br>
+    
+      
+        <div class="aplayer-container">
+          
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.5'
+      loop='all'
+      order='random'
+      fixed='true'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='77539688'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+        </div>
+      
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      
+    
+      
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+      
+    
+      
+        
+          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+</div>
+        
+      
+    
+      
+        本站使用
+        <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.2.0" target="_blank" class="codename">Volantis</a>
+        作为主题，总访问量为
+          <span id="busuanzi_value_site_pv"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+          次
+        
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="/">Copyright © 2017-2020 XXX</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+
+      <a id="s-top" class="fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+  </div>
+  <div>
+    <script>
+window.volantis={};
+window.volantis.loadcss=document.getElementById("loadcss");
+/********************脚本懒加载函数********************************/
+function loadScript(src, cb) {
+var HEAD = document.getElementsByTagName('head')[0] || document.documentElement;
+var script = document.createElement('script');
+script.setAttribute('type','text/javascript');
+if (cb) script.onload = cb;
+script.setAttribute('src', src);
+HEAD.appendChild(script);
+}
+//https://github.com/filamentgroup/loadCSS
+var loadCSS = function( href, before, media, attributes ){
+	var doc = window.document;
+	var ss = doc.createElement( "link" );
+	var ref;
+	if( before ){
+		ref = before;
+	}
+	else {
+		var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+		ref = refs[ refs.length - 1];
+	}
+	var sheets = doc.styleSheets;
+	if( attributes ){
+		for( var attributeName in attributes ){
+			if( attributes.hasOwnProperty( attributeName ) ){
+				ss.setAttribute( attributeName, attributes[attributeName] );
+			}
+		}
+	}
+	ss.rel = "stylesheet";
+	ss.href = href;
+	ss.media = "only x";
+	function ready( cb ){
+		if( doc.body ){
+			return cb();
+		}
+		setTimeout(function(){
+			ready( cb );
+		});
+	}
+	ready( function(){
+		ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+	});
+	var onloadcssdefined = function( cb ){
+		var resolvedHref = ss.href;
+		var i = sheets.length;
+		while( i-- ){
+			if( sheets[ i ].href === resolvedHref ){
+				return cb();
+			}
+		}
+		setTimeout(function() {
+			onloadcssdefined( cb );
+		});
+	};
+	function loadCB(){
+		if( ss.addEventListener ){
+			ss.removeEventListener( "load", loadCB );
+		}
+		ss.media = media || "all";
+	}
+	if( ss.addEventListener ){
+		ss.addEventListener( "load", loadCB);
+	}
+	ss.onloadcssdefined = onloadcssdefined;
+	onloadcssdefined( loadCB );
+	return ss;
+};
+</script>
+<script>
+  
+  loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
+  
+  
+  
+  
+</script>
+<!-- required -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+
+<script>
+  function pjax_fancybox() {
+    $(".md .gallery").find("img").each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("class", "fancybox");
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".md .gallery").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  function SCload_fancybox() {
+    if ($(".md .gallery").find("img").length == 0) return;
+    loadCSS("https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css", document.getElementById("loadcss"));
+    setTimeout(function() {
+      loadScript('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', pjax_fancybox)
+    }, 1);
+  };
+  $(function () {
+    SCload_fancybox();
+  });
+</script>
+
+
+<!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+        var imgs=["http://static.sunday90.com/images/pexels-photo-x20.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+	  function Pjax_backstretch(){
+        
+          $('#cover-backstretch').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        
+	  }
+	  loadScript("https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js",Pjax_backstretch)
+    </script>
+  
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
+
+
+
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '77539688';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.5';
+  loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css", window.volantis.loadcss);
+  // APlayer 需要在  MetingJS 之前加载
+  loadScript("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js")
+  window.volantis.LoadMetingJS=0
+  var checkAPlayer = setInterval(function () {
+    if (!window.APlayer) return
+    clearInterval(checkAPlayer)
+	if (!window.volantis.LoadMetingJS&&!window.MetingJSElement){
+	  window.LoadMetingJS=1
+      loadScript("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js")
+	  }
+  }, 2500)
+
+</script>
+
+
+
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
+
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
+
+    let path = pdata.commentPath;
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: pagePlaceholder,
+      path: path,
+      appId: "iXwwMamAq4n3y2Uyo6ouePV7-gzGzoHsz",
+      appKey: "uupEfy3YAoFOmKNzunrACHJd",
+      pageSize: '10',
+      avatar: 'retro',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      recordIP: 'false',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });
+</script>
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+<!-- optional -->
+
+  <script>
+const SearchServiceimagePath="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/";
+const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
+
+$('.input.u-search-input').one('focus',function(){
+	
+		loadScript('/js/search/hexo.js',setSearchService);
+	
+})
+
+function listenSearch(){
+  
+    customSearch = new HexoSearch({
+      imagePath: SearchServiceimagePath
+    });
+  
+}
+function setSearchService() {
+	listenSearch();
+	
+		document.addEventListener("pjax:success", listenSearch);
+	
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  <script defer>
+
+  const LCCounter = {
+    app_id: 'iXwwMamAq4n3y2Uyo6ouePV7-gzGzoHsz',
+    app_key: 'uupEfy3YAoFOmKNzunrACHJd',
+    custom_api_server: '',
+
+    // 查询存储的记录
+    getRecord(Counter, url, title) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {url, title: title, times: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    },
+
+    // 发起自增请求
+    increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    },
+
+    // 构建自增请求体
+    buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "times": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    },
+
+    // 校验是否为有效的 UV
+    validUV() {
+      var key = 'LeanCloudUVTimestamp';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    },
+
+    addCount(Counter) {
+      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
+      enableIncr = true;
+      var getterArr = [];
+      var incrArr = [];
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#lc-sv');
+      if (pvCtn || enableIncr) {
+        var pvGetter = this.getRecord(Counter, 'https://sunday9787.github.io' + '/#lc-sv', 'Visits').then((record) => {
+          incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-sv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + 1;
+              if (pvCtn) {
+                pvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#lc-uv');
+      if (uvCtn || enableIncr) {
+        var uvGetter = this.getRecord(Counter, 'https://sunday9787.github.io' + '/#lc-uv', 'Visitors').then((record) => {
+          var vuv = this.validUV();
+          vuv && incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-uv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + (vuv ? 1 : 0);
+              if (uvCtn) {
+                uvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 请求文章的浏览数，如果是当前页面就自增
+      var allPV = document.querySelectorAll('#lc-pv');
+      if (allPV.length > 0 || enableIncr) {
+        for (i = 0; i < allPV.length; i++) {
+          let pv = allPV[i];
+          let title = pv.getAttribute('data-title');
+          var url = 'https://sunday9787.github.io' + pv.getAttribute('data-path');
+          if (url) {
+            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
+              // 是当前页面就自增
+              let curPath = window.location.pathname;
+              if (curPath.includes('index.html')) {
+                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
+              }
+              if (pv.getAttribute('data-path') == curPath) {
+                incrArr.push(this.buildIncrement(record.objectId));
+              }
+              if (pv) {
+                var ele = pv.querySelector('#lc-pv #number');
+                if (ele) {
+                  if (pv.getAttribute('data-path') == curPath) {
+                    ele.innerText = (record.times || 0) + 1;
+                  } else {
+                    ele.innerText = record.times || 0;
+                  }
+                  pv.style.display = 'inline';
+                }
+              }
+            });
+            getterArr.push(viewGetter);
+          }
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && this.increment(Counter, incrArr);
+        })
+      }
+
+    },
+
+
+    fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': this.app_id,
+            'X-LC-Key': this.app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      this.addCount(Counter);
+    },
+
+    refreshCounter() {
+      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+      if (api_server) {
+        this.fetchData(api_server);
+      } else {
+        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
+          .then(resp => resp.json())
+          .then(({api_server}) => {
+            this.fetchData('https://' + api_server);
+          });
+      }
+    }
+
+  };
+
+  LCCounter.refreshCounter();
+
+  document.addEventListener('pjax:complete', function () {
+    LCCounter.refreshCounter();
+  });
+</script>
+
+
+
+
+
+
+
+
+<script>
+function listennSidebarTOC() {
+  const navItems = document.querySelectorAll(".toc li");
+  if (!navItems.length) return;
+  const sections = [...navItems].map((element) => {
+    const link = element.querySelector(".toc-link");
+    const target = document.getElementById(
+      decodeURI(link.getAttribute("href")).replace("#", "")
+    );
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({
+		top: target.offsetTop + 100,
+		
+		behavior: "smooth"
+		
+	  });
+    });
+    return target;
+  });
+
+  function activateNavByIndex(target) {
+    if (target.classList.contains("active-current")) return;
+
+    document.querySelectorAll(".toc .active").forEach((element) => {
+      element.classList.remove("active", "active-current");
+    });
+    target.classList.add("active", "active-current");
+    let parent = target.parentNode;
+    while (!parent.matches(".toc")) {
+      if (parent.matches("li")) parent.classList.add("active");
+      parent = parent.parentNode;
+    }
+  }
+
+  function findIndex(entries) {
+    let index = 0;
+    let entry = entries[index];
+    if (entry.boundingClientRect.top > 0) {
+      index = sections.indexOf(entry.target);
+      return index === 0 ? 0 : index - 1;
+    }
+    for (; index < entries.length; index++) {
+      if (entries[index].boundingClientRect.top <= 0) {
+        entry = entries[index];
+      } else {
+        return sections.indexOf(entry.target);
+      }
+    }
+    return sections.indexOf(entry.target);
+  }
+
+  function createIntersectionObserver(marginTop) {
+    marginTop = Math.floor(marginTop + 10000);
+    let intersectionObserver = new IntersectionObserver(
+      (entries, observe) => {
+        let scrollHeight = document.documentElement.scrollHeight + 100;
+        if (scrollHeight > marginTop) {
+          observe.disconnect();
+          createIntersectionObserver(scrollHeight);
+          return;
+        }
+        let index = findIndex(entries);
+        activateNavByIndex(navItems[index]);
+      },
+      {
+        rootMargin: marginTop + "px 0px -100% 0px",
+        threshold: 0,
+      }
+    );
+    sections.forEach((element) => {
+      element && intersectionObserver.observe(element);
+    });
+  }
+  createIntersectionObserver(document.documentElement.scrollHeight);
+}
+
+document.addEventListener("DOMContentLoaded", listennSidebarTOC);
+document.addEventListener("pjax:success", listennSidebarTOC);
+</script>
+
+<!-- more -->
+
+
+
+
+    
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#l_cover",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      //window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      if (typeof $.fancybox != "undefined") {
+        $.fancybox.close();    // 关闭弹窗
+      }
+      volantis.$switcher.removeClass('active'); // 关闭移动端激活的搜索框
+      volantis.$header.removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      volantis.$wrapper.removeClass('sub'); // 跳转页面时关闭二级导航
+
+      // 解绑事件 避免重复监听
+      volantis.$topBtn.unbind('click');
+      $('.menu a').unbind('click');
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+	  
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+       
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+	 
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+      try{
+          if (typeof $.fancybox == "undefined") {
+            SCload_fancybox();
+          } else {
+            pjax_fancybox();
+          }
+        
+		  Pjax_backstretch()
+        
+        
+        
+        
+        
+        
+          pjax_valine();
+        
+        
+        
+        
+        
+      } catch (e) {
+        console.log(e);
+      }
+	  
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+	  
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+</body>
+</html>
